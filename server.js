@@ -6,6 +6,7 @@ var morgan = require("morgan");
 var mongoose = require("mongoose");
 var config = require("./config");
 var expressJwt = require("express-jwt");
+
 var port = process.env.PORT || 7070;
 
 app.use(morgan("dev"));
@@ -27,6 +28,3 @@ mongoose.connect(config.database, function (err) {
 
 // Make the app use the express-jwt authentication middleware on anything starting with "/api"
 app.use("/api,", expressJwt({secret: config.secret}));
-
-// make these routes go through authRoutes
-app.use("/auth", require("./routes/authRoutes"));

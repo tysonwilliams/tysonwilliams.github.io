@@ -13,7 +13,7 @@ app.use(morgan("dev"));
 app.use(bodyParser.json());
 
 // let express serve up the static files
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(__dirname));
 
 // setup server to listen on designated port
 app.listen(port, function () {

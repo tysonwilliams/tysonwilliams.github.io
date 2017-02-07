@@ -141,5 +141,7 @@ a:active {
 
 .skills {
     background: #00a8d4;
+    background-image: url(images/CSS3_and_HTML5_logos.svg) top calc(0% + 6vh) right calc(0% + 6vh) no-repeat;
+    background-size: 40vh;
     color: white;
 }

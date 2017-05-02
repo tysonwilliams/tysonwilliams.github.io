@@ -56,7 +56,6 @@ a:active {
 /*
  * HEADER
  */
-
 .header {
      align-items: center;
      background-color: #FFFFFF;
@@ -113,7 +112,6 @@ a:active {
 /*
  * SKILLS & BADGES
  */
-
 .skills-badges {
     /*will style badges here*/
 }
@@ -126,9 +124,15 @@ a:active {
 }
 
 /*
+* CONTACT
+*/
+#github {
+    margin-top: 1em;
+}
+
+/*
  * FOOTER
  */
-
 footer {
     align-items: center;
     background-color: #313133;
